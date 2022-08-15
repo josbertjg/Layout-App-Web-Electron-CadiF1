@@ -1,0 +1,407 @@
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 2rem;
+  background-color: #1cb3ca;
+}
+header .navbar-brand {
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .navbar-brand img {
+  height: 3rem;
+}
+header .navbar-toggler-icon {
+  height: 2rem;
+  width: 2rem;
+}
+header .navbar {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .offcanvas-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #1cb3ca;
+}
+header .offcanvas-start .offcanvas-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+header div {
+  width: 100%;
+  display: inline-block;
+}
+header ul {
+  display: inline-block !important;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: block;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+header ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #ff7d1a;
+  cursor: pointer;
+}
+header ul li a i {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+header ul li a:hover i {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+header #btnIniciar {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ff4d00;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  border-radius: 0px;
+  margin-bottom: 0rem;
+}
+header #btnIniciar:hover {
+  background-color: #ff6727;
+}
+header .card {
+  background-color: transparent;
+  padding: 0;
+}
+header .card ul {
+  padding: 0;
+}
+header .card ul a {
+  padding-left: 2rem;
+  font-size: 1.1rem;
+}
+header span {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+header img {
+  height: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  header span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem !important;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .tab-content {
+  padding: 1rem;
+  min-height: 447px;
+}
+main .input-group-text img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 1.4rem;
+  padding: 0.5rem;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+main .input-group-text img:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+main .table-wrapper {
+  height: 170px;
+  overflow-y: scroll;
+}
+main .table-wrapper table {
+  cursor: pointer;
+}
+main .table-wrapper table thead {
+  background-color: #F14810;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+main .table-wrapper table td {
+  padding: 0rem 1rem !important;
+  height: 32px !important;
+}
+main .offhover-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 2px #1cb3ca solid;
+  background-color: #1cb3ca;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-bottom: 0.3rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 7%;
+  right: -220px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+}
+main .offhover-1 img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 5px;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+main .offhover-1 input {
+  cursor: pointer;
+}
+main .offhover-1 label {
+  cursor: pointer;
+}
+main .offhover-1:hover {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  cursor: pointer;
+}
+main .offhover-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 2px #1cb3ca solid;
+  background-color: #1cb3ca;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-bottom: 0.3rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 15%;
+  right: -248px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+}
+main .offhover-2 img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 5px;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+main .offhover-2 input {
+  cursor: pointer;
+}
+main .offhover-2 label {
+  cursor: pointer;
+}
+main .offhover-2:hover {
+  -webkit-transform: translateX(-235px);
+          transform: translateX(-235px);
+  cursor: pointer;
+}
+main .offhover-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 2px #1cb3ca solid;
+  background-color: #1cb3ca;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-bottom: 0.3rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23%;
+  right: -203px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+}
+main .offhover-3 img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 5px;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+main .offhover-3 input {
+  cursor: pointer;
+}
+main .offhover-3 label {
+  cursor: pointer;
+}
+main .offhover-3:hover {
+  -webkit-transform: translateX(-190px);
+          transform: translateX(-190px);
+  cursor: pointer;
+}
+main .offhover-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 2px #1cb3ca solid;
+  background-color: #1cb3ca;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-bottom: 0.3rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 31%;
+  right: -220px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+}
+main .offhover-4 img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 5px;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+main .offhover-4 input {
+  cursor: pointer;
+}
+main .offhover-4 label {
+  cursor: pointer;
+}
+main .offhover-4:hover {
+  -webkit-transform: translateX(-205px);
+          transform: translateX(-205px);
+  cursor: pointer;
+}
+
+.input-group-text {
+  padding: 0%;
+}
+
+footer {
+  height: 6vh;
+  background-color: #E9EEF3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 3px #ff7d1a solid;
+}

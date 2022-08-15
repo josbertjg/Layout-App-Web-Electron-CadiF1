@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/info_basica_capitulos.css">
+    <script src="https://kit.fontawesome.com/c8b5ffbcfa.js" crossorigin="anonymous"></script>
+    <title>Información básica de los capítulos de un Curso</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand mb-3" href="#">
+                        <img src="../img/logo-blanco.svg" alt="logo">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mt-4">
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                                Asesor
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse1">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Asesores</a></li>
+                                        <li><a href="#">Asesores</a></li>
+                                        <li><a href="#">Asesores</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                                Cursos
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse2">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="./cursos_niveles.html">Cursos y Niveles</a></li>
+                                        <li><a href="#">Ajuste de Precios</a></li>
+                                        <li><a href="#">Lista de Precios</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                                Carreras
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse3">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                                Videos
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse4">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="">Comandos de Red</a>
+                        </li>
+                        <li>
+                            <a class="">Configuración</a>
+                        </li>
+                        <li>
+                            <a class="">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <span>Información básica Niveles</span>
+        <img class="d-none d-sm-block" src="../img/logo-blanco.svg" alt="logo">
+    </header>
+    <main>
+        <ul class="nav nav-tabs mt-1" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="basica-tab" data-bs-toggle="tab" data-bs-target="#basica-tab-pane" type="button" role="tab" aria-controls="basica-tab-pane" aria-selected="true">Información Básica</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="temas-tab" data-bs-toggle="tab" data-bs-target="#temas-tab-pane" type="button" role="tab" aria-controls="temas-tab-pane" aria-selected="false">Temas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="practicas-tab" data-bs-toggle="tab" data-bs-target="#practicas-tab-pane" type="button" role="tab" aria-controls="practicas-tab-pane" aria-selected="false">Prácticas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="preguntas-tab" data-bs-toggle="tab" data-bs-target="#preguntas-tab-pane" type="button" role="tab" aria-controls="preguntas-tab-pane" aria-selected="true">Preguntas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="resumen-tab" data-bs-toggle="tab" data-bs-target="#resumen-tab-pane" type="button" role="tab" aria-controls="resumen-tab-pane" aria-selected="false">Resumen</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tarea-tab" data-bs-toggle="tab" data-bs-target="#tarea-tab-pane" type="button" role="tab" aria-controls="tarea-tab-pane" aria-selected="false">Tarea</button>
+            </li>
+        </ul>
+        <div class="tab-content px-3" id="myTabContent1">
+            <div class="tab-pane fade px-sm-5 px-0 show active" id="basica-tab-pane" role="tabpanel" aria-labelledby="basica-tab" tabindex="0">
+                <!-- INFORMACION BASICA -->
+                <section class="row mb-3">
+                    <div class="col-sm-5 col-12 d-flex align-items-center">
+                        <span class="fw-bold">Nivel:</span>
+                    </div>
+                    <div class="col-sm-7 col-12">
+                        <select name="" id="" class="form-select">
+                            <option value="0" selected hidden>Nivel 1</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="row mb-3">
+                    <div class="col-sm-5 col-12 d-flex align-items-center">
+                        <span class="fw-bold">Número de capítulo:</span>
+                    </div>
+                    <div class="col-sm-7 col-12">
+                        <div class="col-2">
+                            <input type="text" class="form-control" readonly value="1">
+                        </div>
+                    </div>
+                </section>
+                <section class="row mb-3">
+                    <div class="col-sm-5 col-12 d-flex align-items-center">
+                        <span class="fw-bold">Nombre:</span>
+                    </div>
+                    <div class="col-sm-7 col-12">
+                        <input type="text" class="form-control" readonly value="Conceptos y Elementos de Excel">
+                    </div>
+                </section>
+                <section class="row mb-3">
+                    <div class="col-sm-5 col-12">
+                        <span class="fw-bold">Objetivo:</span>
+                    </div>
+                    <div class="col-sm-7 col-12">
+                        <textarea name="" id="" class="form-control" cols="30" rows="3" readonly>Reconocer los principales elementos de la pantalla inicial de Excel asi como realizar operaciones basicas con archivos de excel</textarea>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col-sm-5 col-12 d-flex align-items-center">
+                        <span class="fw-bold">Duración total (minutos):</span>
+                    </div>
+                    <div class="col-sm-7 col-12 d-flex align-items-center">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-4">
+                            <select name="" id="" class="form-select">
+                                <option value="0">45</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <div class="offhover-1">
+                    <img src="../img/task.png" alt="task">
+                    <div class="form-check form-switch me-2">
+                        <div>
+                            <input class="form-check-input" type="checkbox" role="switch" id="nivel_activo">
+                            <label class="form-check-label fw-bold" for="nivel_activo">está activo?</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="temas-tab-pane" role="tabpanel" aria-labelledby="temas-tab" tabindex="0">
+                <!-- TEMAS -->
+                <section class="row mb-2 d-flex">
+                    <span class="fw-bold fs-5">Temas del Capítulo</span>
+                    <div class="d-flex align-items-center justify-content-between col-md-10 col-12">
+                        
+                        <span class="me-5">4 Elementos</span>
+                        <div class="d-flex align-items-center">
+                            <span class="me-1">Total:</span>
+                            <input type="text" class="form-control" value="12" readonly>
+                        </div>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col-md-10 col-12 table-wrapper">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead>
+                                <th>Nro</th>
+                                <th>Nombre</th>
+                                <th>Duración</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Que es Excel y Como iniciarlo</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>La Pantalla Inicial. Parte 1</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>La Pantalla Inicial. Parte</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Operaciones Con Archivos</td>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-2 col-12 d-flex flex-md-column flex-row justify-content-center justify-content-md-start mt-md-0 mt-3">
+                        <a href="#" class="btn btn-success mb-md-2 mb-0 me-md-0 me-2">Agregar</a>
+                        <a href="#" class="btn btn-primary mb-md-2 mb-0 me-md-0 me-2">Modificar</a>
+                        <a href="#" class="btn btn-danger">Eliminar</a>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="practicas-tab-pane" role="tabpanel" aria-labelledby="practicas-tab" tabindex="0">
+                <!-- PRACTICA -->
+                <section class="row">
+                    <div class="col-md-5 col-sm-10 col-12">
+                        <span class="">Duración total de la práctica (en minutos)</span>
+                    </div>
+                    <div class="col-sm-2 col-4 mb-sm-0 mb-3">
+                        <input type="text" class="form-control" value="30" readonly>
+                    </div>
+                </section>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pract-guiada-tab" data-bs-toggle="tab" data-bs-target="#pract-guiada-tab-pane" type="button" role="tab" aria-controls="pract-guiada-tab-pane" aria-selected="true">Práctica guiada (Demostración)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pract-individual-tab" data-bs-toggle="tab" data-bs-target="#pract-individual-tab-pane" type="button" role="tab" aria-controls="pract-individual-tab-pane" aria-selected="false">Práctica individual (Validación)</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content mt-3" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="pract-guiada-tab-pane" role="tabpanel" aria-labelledby="pract-guiada-tab" tabindex="0">
+                        <section class="row">
+                            <div class="col-md-10 col-12 d-flex justify-content-between">
+                                <span class="fw-bold">Pasos de la demostración:</span>
+                                <span>6 Elementos</span>
+                            </div>
+                            <div class="col-md-10 col-12 table-wrapper">
+                                <table class="table table-hover table-striped table-bordered">
+                                    <thead>
+                                        <th>Nro</th>
+                                        <th>Actividad</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Iniciar Excel</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Práctica.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Reconocer las partes de la pantalla inicial...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Hacer click en las distintas pestañas...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Desplegar las opciones de la pestaña archivo...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Agregar un nuevo comando a la barra de...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-2 col-12 d-flex flex-md-column flex-row justify-content-md-start justify-content-center mt-2 mt-md-0">
+                                <a href="#" class="btn btn-success mb-md-2 mb-0 me-2 me-md-0">Agregar</a>
+                                <a href="#" class="btn btn-primary mb-md-2 mb-0 me-2 me-md-0">Modificar</a>
+                                <a href="#" class="btn btn-danger">Eliminar</a>
+                            </div>
+                        </section>
+                        <section class="row mt-3">
+                            <div class="col-md-10 col-12 d-flex align-items-center">
+                                <span class="col-2">Video (opcional):</span>
+                                <div class="input-group">
+                                    <select name="" id="" class="form-select">
+                                        <option value="0" selected>EXL-N1-C1-PRACTICA</option>
+                                    </select>
+                                    <a class="input-group-text">
+                                        <img src="../img/binoculares.png" alt="binoculares">
+                                    </a>
+                                    <a class="input-group-text">
+                                        <img src="../img/lupa.png" alt="lupa">
+                                    </a>
+                                    <a class="input-group-text">
+                                        <img src="../img/papel.png" alt="sheet">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="pract-individual-tab-pane" role="tabpanel" aria-labelledby="pract-individual-tab" tabindex="0">practicas individuales</div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="preguntas-tab-pane" role="tabpanel" aria-labelledby="preguntas-tab" tabindex="0">
+                <!-- PREGUNTAS -->
+            </div>
+            <div class="tab-pane fade" id="resumen-tab-pane" role="tabpanel" aria-labelledby="resumen-tab" tabindex="0">
+                <!-- RESUMEN -->
+            </div>
+            <div class="tab-pane fade" id="tarea-tab-pane" role="tabpanel" aria-labelledby="tarea-tab" tabindex="0">
+                <!-- TAREA -->
+            </div>
+        </div>
+        <hr>
+        <section class="d-flex justify-content-sm-end justify-content-center px-sm-5 px-0">
+            <a href="#" class="btn btn-success me-3">Aceptar</a>
+            <a href="#" class="btn btn-danger">Cancelar</a>
+        </section>
+    </main>
+    <footer>
+        <b class="me-2">CADIF1</b>
+        <span>Derechos de Autor ©2003-2022.</span> 
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/curso.css">
+    <script src="https://kit.fontawesome.com/c8b5ffbcfa.js" crossorigin="anonymous"></script>
+    <title>Curso Nivel 1</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand mb-3" href="../index.html">
+                        <img src="../img/logo-blanco.svg" alt="logo">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mt-4">
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                                Asesor
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse1">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Asesores</a></li>
+                                        <li><a href="#">Asesores</a></li>
+                                        <li><a href="#">Asesores</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                                Cursos
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse2">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="./cursos_niveles.html">Cursos y Niveles</a></li>
+                                        <li><a href="#">Ajuste de Precios</a></li>
+                                        <li><a href="#">Lista de Precios</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                                Carreras
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse3">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                                Videos
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse4">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="#">Comandos de Red</a>
+                        </li>
+                        <li>
+                            <a class="#">Configuración</a>
+                        </li>
+                        <li>
+                            <a class="#">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <span>Curso Nivel 1</span>
+        <img class="d-none d-sm-block" src="../img/logo-blanco.svg" alt="logo">
+    </header>
+    <main>
+        <nav class="mt-4 mx-3">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" type="button" role="tab" aria-controls="nav-general" aria-selected="true">Información General</button>
+              <button class="nav-link" id="nav-detallada-tab" data-bs-toggle="tab" data-bs-target="#nav-detallada" type="button" role="tab" aria-controls="nav-detallada" aria-selected="false">Información Detallada</button>
+            </div>
+        </nav>
+        <div class="tab-content pb-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
+                <!-- INFORMACION GENERAL -->
+                <section class="row">
+                    <article class="row">
+                        <div class="col-sm-6 col-12">
+                            <div class="input-group mb-3">
+                                <select name="curso" id="" class="form-select">
+                                    <option value="0" selected hidden>Curso</option>
+                                </select>
+                                <a class="input-group-text">
+                                    <img src="../img/binoculares.png" alt="binoculares">
+                                </a>
+                                <a class="input-group-text">
+                                    <img src="../img/lupa.png" alt="lupa">
+                                </a>
+                                <a class="input-group-text">
+                                    <img src="../img/papel.png" alt="sheet">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="input-group mb-3">
+                                <select name="nivel" id="" class="form-select">
+                                    <option value="0" selected hidden>Nivel</option>
+                                </select>
+                                <a class="input-group-text">
+                                    <img src="../img/binoculares.png" alt="binoculares">
+                                </a>
+                                <a class="input-group-text">
+                                    <img src="../img/lupa.png" alt="lupa">
+                                </a>
+                                <a class="input-group-text">
+                                    <img src="../img/papel.png" alt="sheet">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Objetivo Principal">
+                        </div>
+                    </article>
+                </section>
+                <hr class="mt-4">
+                <section class="row d-flex">
+                    <div class="col-sm-4 col-12">
+                        <span class="fs-4 fw-bold">Capítulos del Nivel</span>
+                    </div>
+                    <div class="col-sm-3 col-6 d-flex align-items-center">
+                        <span class="fs-5">4 Elementos</span>
+                    </div>
+                    <div class="col-sm-3 col-6 d-flex align-items-center justify-content-end mb-2">
+                        <span class="me-2 fs-md-5 fs-5">Total</span>
+                        <input type="text" class="form-control text-end w-50" readonly value="675">
+                    </div>
+                    <div class="col-md-10 col-12 table-wrapper">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <th>Nro</th>
+                                <th>Nombre</th>
+                                <th>Duración</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Conceptos y Elementos de Excel</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Introducir Daros en Excel</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Seleccionar y Manipular Celdas</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Uso del Control de Autorrelleno</td>
+                                    <td>45</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-2 col-12 d-flex justify-content-md-start justify-content-center flex-md-column flex-row mb-3">
+                        <a href="#" class="btn btn-success mb-md-2 me-2 me-md-0">Agregar</a>
+                        <a href="#" class="btn btn-primary mb-md-2 me-2 me-md-0">Modificar</a>
+                        <a href="#" class="btn btn-danger">Eliminar</a>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-detallada" role="tabpanel" aria-labelledby="nav-detallada    -tab" tabindex="0">
+                <!-- INFORMACION DETALLADA -->
+                <section class="row d-flex justify-content-center">
+                    <article class="row">
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <span class="fw-bold">Nro de Horas Prácticas:</span>
+                            <input type="text" class="form-control" readonly value="20">
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <span class="fw-bold">Precio:</span>
+                            <input type="text" class="form-control" readonly value="100">
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <span class="fw-bold">Nro de Horas Teóricas:</span>
+                            <input type="text" class="form-control" readonly value="0">
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <span class="fw-bold">Costo Material Adicional:</span>
+                            <input type="text" class="form-control" readonly value="0.00">
+                        </div>
+                    </article>
+                    <article class="row mt-3">
+                        <span class="fw-bold">Objetivos Específicos:</span>
+                        <textarea name="objetivos" id="" cols="30" rows="3" class="form-control" placeholder="Objetivos Específicos"></textarea>
+                    </article>
+                </section>
+                <section class="row">
+                    <div class="col-sm-10 col-12 d-flex justify-content-between flex-wrap">
+                        <span class="fs-5 fw-bold">Pre Requisitos para este Nivel</span>
+                        <span class="fs-4 mt-1">1 Elemento</span>
+                    </div>
+                    <div class="col-sm-10 col-12 table-wrapper">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <th>Curso</th>
+                                <th>Nivel</th>
+                            </thead>
+                            <tr>
+                                <td>Fundamentos de la Computación</td>
+                                <td>Nivel 1</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-2 col-12 d-flex flex-sm-column flex-row justify-content-sm-start justify-content-center mt-sm-0 mt-2">
+                        <a href="#" class="btn btn-success mb-sm-2 mb-0 me-sm-0 me-2">Agregar</a>
+                        <a href="#" class="btn btn-primary mb-sm-2 mb-0 me-sm-0 me-2">Modificar</a>
+                        <a href="#" class="btn btn-danger">Eliminar</a>
+                    </div>
+                </section>
+                <div class="offhover-4">
+                    <img src="../img/impresion.png" alt="impresion">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="listo_imprimir">
+                        <label class="form-check-label" for="listo_imprimir">Listo para Imprimir?</label>
+                    </div>
+                </div>
+                <div class="offhover-3">
+                    <img src="../img/internet.png" alt="internet">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="need_internet">
+                        <label class="form-check-label" for="need_internet">Necesita Internet?</label>
+                    </div>
+                </div>
+                <div class="offhover-2">
+                    <img src="../img/papel.png" alt="papers">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Necesita crear carpetas?</label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <section class="mb-3 px-3">
+            <div class="mt-sm-0 mt-3 col-md-10 col-12 d-flex justify-content-md-end justify-content-center">
+                <a href="#" class="btn btn-success me-2">Aceptar</a>
+                <a href="#" class="btn btn-danger">Cancelar</a>
+            </div>
+        </section>
+        <div class="offhover-1">
+            <img src="../img/task.png" alt="task">
+            <div class="form-check form-switch me-2">
+                <div>
+                    <input class="form-check-input" type="checkbox" role="switch" id="nivel_activo">
+                    <label class="form-check-label fw-bold" for="nivel_activo">El nivel está activo?</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <b class="me-2">CADIF1</b>
+        <span>Derechos de Autor ©2003-2022.</span> 
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+</html>

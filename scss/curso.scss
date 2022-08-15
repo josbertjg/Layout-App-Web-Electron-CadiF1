@@ -1,0 +1,87 @@
+@import "_imports.scss";
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    @include header();
+}
+main{
+    display: flex;
+    flex-direction: column;
+    .tab-content{
+        padding: 1rem;
+        min-height: 447px;
+    }
+    .input-group-text{
+        img{
+            box-sizing: content-box;
+            height: 1.4rem;
+            padding: .5rem;
+            transition: all 200ms;
+            &:hover{
+                background-color: #f8f8f8;
+                cursor: pointer;
+            }
+        }
+    }
+    .table-wrapper{
+        @include table();
+    }
+    .offhover-1{
+        @include offHover();
+        position: fixed;
+        bottom: 7%;
+        right: -220px;
+        transition: all 200ms;
+        cursor: pointer;
+        &:hover{
+            transform: translateX(-200px);
+            cursor: pointer;
+        }
+    }
+    .offhover-2{
+        @include offHover();
+        position: fixed;
+        bottom: 15%;
+        right: -248px;
+        transition: all 200ms;
+        cursor: pointer;
+        &:hover{
+            transform: translateX(-235px);
+            cursor: pointer;
+        }
+    }
+    .offhover-3{
+        @include offHover();
+        position: fixed;
+        bottom: 23%;
+        right: -203px;
+        transition: all 200ms;
+        cursor: pointer;
+        &:hover{
+            transform: translateX(-190px);
+            cursor: pointer;
+        }
+    }
+    .offhover-4{
+        @include offHover();
+        position: fixed;
+        bottom: 31%;
+        right: -220px;
+        transition: all 200ms;
+        cursor: pointer;
+        &:hover{
+            transform: translateX(-205px);
+            cursor: pointer;
+        }
+    }
+}
+.input-group-text{
+    padding: 0%;
+}
+footer{
+    @include footer();
+}

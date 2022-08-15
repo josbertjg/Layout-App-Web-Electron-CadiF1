@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/cursos_niveles.css">
+    <script src="https://kit.fontawesome.com/c8b5ffbcfa.js" crossorigin="anonymous"></script>
+    <title>Cursos y Niveles</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand mb-3" href="../index.html">
+                        <img src="../img/logo-blanco.svg" alt="logo">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mt-4">
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                                Asesor
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse1">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Asesores</a></li>
+                                        <li><a href="#">Asesores</a></li>
+                                        <li><a href="#">Asesores</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                                Cursos
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse2">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="./cursos_niveles.html">Cursos y Niveles</a></li>
+                                        <li><a href="#">Ajuste de Precios</a></li>
+                                        <li><a href="#">Lista de Precios</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                                Carreras
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse3">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                                Videos
+                                <i class="fa-solid fa-angle-right ms-2"></i>
+                            </a>
+
+                            <div class="collapse" id="collapse4">
+                                <div class="card border-0 card-body">
+                                    <ul>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="#">Comandos de Red</a>
+                        </li>
+                        <li>
+                            <a class="#">Configuración</a>
+                        </li>
+                        <li>
+                            <a class="#">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <span>Cursos y Niveles</span>
+        <img src="../img/logo-blanco.svg" class="d-none d-sm-block" alt="Logo">
+    </header>
+    <main>
+        <section class="row container-fluid mx-0 my-2 py-0">
+            <div class="col-sm-5 col-12">
+                <select class="form-select mb-2 py-0" name="area_de_estudio" id="">
+                    <option value="0" selected hidden>Area de Estudio</option>
+                </select>
+                <select class="form-select py-0" name="tipo_planificacion" id="">
+                    <option value="0" selected hidden>Planificación</option>
+                </select>
+            </div>
+            <div class="col-sm-5 col-12">
+                <select class="form-select mb-2 mt-2 mt-sm-0 py-0" name="tipo_de_curso" id="">
+                    <option value="0" selected hidden>Curso</option>
+                </select>
+                <select class="form-select py-0" name="coordinador" id="">
+                    <option value="0" selected hidden>Coordinador</option>
+                </select>
+            </div>
+            <div class="col-sm-2 col-12 my-2 my-sm-0">
+                <a href="#" type="button" class="btn btn-primary btn-sm">Ver Todos</a>
+            </div>
+        </section>
+        <section class="row container-fluid mx-0 py-1">
+            <div class="col-10">
+                <input type="text" class="form-control" placeholder="Ingrese el Curso:">
+            </div>
+        </section>
+        <section class="row container-fluid mx-0 my-2">
+            <div class="col-sm-10 col-12 table-wrapper">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <th>Código</th>
+                        <th>Curso</th>
+                        <th>Coordinador</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EXL</td>
+                            <td>Excel</td>
+                            <td>Jesús Esteban Rojas Dellan</td>
+                        </tr>
+                        <tr>
+                            <td>MCR</td>
+                            <td>Macros en Excel</td>
+                            <td>Jesús Esteban Rojas Dellan</td>
+                        </tr>
+                        <tr>
+                            <td>EXL</td>
+                            <td>Excel</td>
+                            <td>Jesús Esteban Rojas Dellan</td>
+                        </tr>
+                        <tr>
+                            <td>MCR</td>
+                            <td>Macros en Excel</td>
+                            <td>Jesús Esteban Rojas Dellan</td>
+                        </tr>
+                        <tr>
+                            <td>MCR</td>
+                            <td>Macros en Excel</td>
+                            <td>Jesús Esteban Rojas Dellan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-2 d-flex flex-sm-column flex-row justify-content-center justify-content-sm-start mt-2 mt-sm-0">
+                <a href="#" class="btn btn-rounded btn-success btn-sm mb-sm-2 mb-0 me-2 me-sm-0 p-sm-2 px-1 py-1">Nuevo</a>
+                <a href="./curso.html" class="btn btn-rounded btn-primary btn-sm mb-sm-2 mb-0 me-2 me-sm-0 p-sm-2 px-1 py-1">Ver</a>
+                <a href="#" class="btn btn-rounded btn-primary btn-sm mb-sm-2 mb-0 me-2 me-sm-0 p-sm-2 px-1 py-1">Subir</a>
+                <a href="#" class="btn btn-rounded btn-warning btn-sm p-sm-2 px-1 py-1">Imprimir</a>
+            </div>
+        </section>
+        <hr>
+        <section class="row container-fluid mx-0 my-2">
+            <div class="col-12 col-sm-10 d-flex justify-content-center  mb-2 mb-sm-none table-wrapper">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <th>Nivel</th>
+                        <th>Código</th>
+                        <th class="d-none d-sm-table-cell">Objetivo Principal</th>
+                        <th class="d-none d-sm-table-cell">Horas</th>
+                        <th>Precio</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>EXL-N1</td>
+                            <td class="d-none d-sm-table-cell">Formulas, Formatos e Impresión en Excel</td>
+                            <td class="d-none d-sm-table-cell">20</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>EXL-N2</td>
+                            <td class="d-none d-sm-table-cell">Funciones, Tablas y Gráficos</td>
+                            <td class="d-none d-sm-table-cell">20</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>EXL-N3</td>
+                            <td class="d-none d-sm-table-cell">Herramientas Avanzadas de Excel</td>
+                            <td class="d-none d-sm-table-cell">20</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>EXL-CF</td>
+                            <td class="d-none d-sm-table-cell">Conociendo Excel 2016</td>
+                            <td class="d-none d-sm-table-cell">3</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>EXL-CF</td>
+                            <td class="d-none d-sm-table-cell">Conociendo Excel 2016</td>
+                            <td class="d-none d-sm-table-cell">3</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-2 d-flex flex-sm-column flex-row justify-content-center justify-content-sm-start">
+                <a href="#" class="btn btn-success btn-rounded mb-sm-2 mb-0 me-2 me-sm-0 p-sm-2 px-1 py-1 btn-sm">Nuevo</a>
+                <a href="#" class="btn btn-primary btn-rounded mb-sm-2 mb-0 me-2 me-sm-0 p-sm-2 px-1 py-1 btn-sm">Ver</a>
+                <a href="#" class="btn btn-primary btn-rounded mb-sm-2 mb-0 me-2 me-sm-0 p-sm-2 px-1 py-1 btn-sm">Editar</a>
+                <a href="#" class="btn btn-warning btn-rounded mb-sm-2 mb-0 me-2 me-sm-0 p-sm-2 py-1 btn-sm px-0">Imprimir</a>
+                <a href="#" class="btn btn-warning btn-rounded p-sm-2 px-1 py-1 btn-sm">Simular</a>
+            </div>
+        </section>
+        <div id="switches">
+            <div>
+                <img src="../img/user.png" alt="user">
+                <div class="form-check form-switch d-flex align-items-center">
+                    <input class="form-check-input me-3" type="checkbox" role="switch" id="cursos_a_dictar">
+                    <label class="form-check-label" for="cursos_a_dictar">Ver sólo cursos que puede dictar el usuario.</label>
+                </div>
+            </div>
+            <div>
+                <img src="../img/task.png" alt="user">
+                <div class="form-check form-switch d-flex align-items-center">
+                    <input class="form-check-input me-3" type="checkbox" role="switch" id="cursos_activos">
+                    <label class="form-check-label" for="cursos_activos">Ver sólo los cursos activos.</label>
+                </div>
+            </div>
+            <div>
+                <img src="../img/levels.png" alt="user">
+                <div class="form-check form-switch d-flex justify-content-start align-items-center">
+                    <input class="form-check-input me-3" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Ver sólo los niveles activos.</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <b class="me-2">CADIF1</b>
+        <span>Derechos de Autor ©2003-2022.</span>
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,196 @@
+//PALETA DE COLORES 
+$principal: #ff7d1a;
+$fondo: #1cb3ca;
+$fondo_boton: #ff4d00;
+$fondo_footer: #E9EEF3;
+$tabla:#F14810;
+//BREAKPOINTS
+$bp-xxl:1400px;
+$bp-xl:1200px;
+$bp-lg:992px;
+$bp-md:768px;
+$bp-sm:576px;
+//HEADER
+@mixin header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    background-color: $fondo;
+    @include offcanvas();
+    span{
+        color: white;
+        font: {
+            weight: bold;
+            size: 2rem;
+        }
+    }
+    img{
+        height: 2.5rem;
+    }
+    @media screen and (max-width: $bp-md) {
+        span{
+            color: white;
+            font: {
+                weight: bold;
+                size: 1.5rem !important;
+            }
+        }
+    }
+}
+//OFFCANVAS
+@mixin offcanvas(){
+    .navbar-brand{
+        padding-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 3rem;
+        }
+    }
+    .navbar-toggler-icon{
+        height: 2rem;
+        width: 2rem;
+    }
+    .navbar{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    .offcanvas-start{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $fondo;
+        .offcanvas-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+    div{
+        width: 100%;
+        display: inline-block;
+    }
+    ul{
+        display: inline-block !important;
+        li{
+            a{
+                text-decoration: none;
+                color: white;
+                padding: .5rem .75rem;
+                font: {
+                    weight: bold;
+                    size: 1.3rem;
+                }
+                display: block;
+                transition: all 200ms;
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    color: $principal;
+                    cursor: pointer;
+                }
+                & i{
+                    transition: all 200ms;
+                }
+                &:hover i{
+                    transform: rotateZ(90deg);
+                }
+            }
+        }
+    }
+    #btnIniciar{
+        @include btn-iniciar();
+    }
+    .card{
+        background-color: transparent;
+        padding: 0;
+        ul{
+            padding: 0;
+            a{
+                padding-left: 2rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+//BOTON INICIAR
+@mixin btn-iniciar{
+    text-align: center;
+    padding: 1rem;
+    background-color: $fondo_boton;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 200ms;
+    border-radius: 0px;
+    margin-bottom: 0rem;
+    &:hover{
+        background-color: #ff6727;
+    }
+}
+//TABLES
+@mixin table {
+    height: 170px;
+    overflow-y: scroll;
+    table{
+        cursor: pointer;
+        thead{
+            background-color: $tabla;
+            color: white;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+        td{
+            padding: 0rem 1rem !important;
+            height: 32px !important;
+        }
+    }
+}
+//OFFCANVAS HOVER
+@mixin offHover {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px $fondo solid;
+    background-color: $fondo;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: .3rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    img{
+        box-sizing: content-box;
+        padding-left: 5px;
+        height: 2rem;
+        margin-right: 1rem;
+        background-color: white;
+        padding: 5px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    input{
+        cursor: pointer;
+    }
+    label{
+        cursor: pointer;
+    }
+}
+//FOOTER
+@mixin footer {
+    height: 6vh;
+    background-color: $fondo_footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px $principal solid;
+}

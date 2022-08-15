@@ -1,0 +1,79 @@
+@import "_imports.scss";
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    @include header();
+}
+@media screen and (max-width: $bp-md) {
+    .table-wrapper{
+        height: 170px !important;
+    }
+}
+main{
+    position: relative;
+    padding: 1rem;
+    #myTabContent1{
+        min-height: 358px !important;
+        margin-top: 2rem
+    }
+    #basica-tab-pane{
+        & section{
+            padding: .35rem 0;
+            span{
+                font-size: 1rem;
+            }
+        }
+        $var:1;
+        @for $var from 1 through 5 {
+            @if ($var%2!=0) {
+                & section:nth-of-type(#{$var}){
+                    background-color: $fondo_footer;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    #temas-tab-pane{
+        .table-wrapper{
+            @include table();
+            height: 280px;
+        }
+    }
+    #practicas-tab-pane{
+        .table-wrapper{
+            @include table();
+        }
+        .input-group-text{
+            padding: 0!important;
+            img{
+                box-sizing: content-box;
+                height: 1.4rem;
+                padding: .5rem;
+                transition: all 200ms;
+                &:hover{
+                    background-color: #f8f8f8;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .offhover-1{
+        @include offHover();
+        position: fixed;
+        bottom: 7%;
+        right: -220px;
+        transition: all 200ms;
+        cursor: pointer;
+        &:hover{
+            transform: translateX(-200px);
+            cursor: pointer;
+        }
+    }
+}
+footer{
+    @include footer();
+}
